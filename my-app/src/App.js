@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 
 function App() {
-  const [transactions, setTransactions]= useState([])
-  const [search, setSearch] = useState("")
-  useEffect(() => {
-  fetch(`http://localhost:8001/transactions`)
-  .then((response) => response.json())
-  .then((transaction) => setTransactions(transaction))
-  console.log({transactions});
-}, [search]);
+      const [transactions, setTransactions]= useState([])
+      const [search, setSearch] = useState("")
+      useEffect(() => {
+    fetch(`http://localhost:8001/transactions`)
+    .then((response) => response.json())
+    .then((transaction) => setTransactions(transaction))
+    console.log({transactions});
+},);
   
 function addNewTransactions(newForm) {
   setTransactions(transactions => [...transactions, newForm])
@@ -29,9 +29,7 @@ function addNewTransactions(newForm) {
       <div className="header-container">
         <h2>The Royal Bank Of Flatiron</h2>
       </div>
-      <div>
-        <Filter searching={searching} />
-        </div>
+
       <div>
         <NewTransactionForm onTransactionSubmit={addNewTransactions} />
       </div>
@@ -39,8 +37,6 @@ function addNewTransactions(newForm) {
   )
   }
 
-  export default App;
-  
 
-}
+
 export default App;
