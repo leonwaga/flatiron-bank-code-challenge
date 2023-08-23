@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
 function App() {
-      const [transactions, setTransactions]= useState([])
-      const [search, setSearch] = useState("")
+    const [transactions, setTransactions]= useState([])
+    const [search, setSearch] = useState("")
       useEffect(() => {
-    fetch(`http://localhost:8001/transactions`)
+    fetch( "http://localhost:3000/transactions")
     .then((response) => response.json())
     .then((transaction) => setTransactions(transaction))
     console.log({transactions});
@@ -14,12 +14,12 @@ function addNewTransactions(newForm) {
   setTransactions(transactions => [...transactions, newForm])
 
   const servers = {
-    method: 'POST',
-    Headers: { 'content-type': 'application/json' },
+    method: "POST",
+    Headers: {"content-type": "application/json" },
     
     body: JSON.stringify(newForm)
   }
-  fetch(`http://localhost:8001/transactions`, servers)
+  fetch(` http://localhost:3000/transactions`, servers)
   .then((response) => response.json())
   .then((newForm) => console.log(newForm))
 }

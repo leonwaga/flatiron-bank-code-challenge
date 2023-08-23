@@ -1,3 +1,19 @@
+
+# Table of contents
+
+1.Description
+2.Technology used
+3.License
+4.Author's Information
+
+## Description
+
+This website is a Banking related application that allows users to view transactions. The user should be able to:
+
+1. View a table containing a list of transactions
+2. Add a new transaction by filluing the form at the summit of the page.
+3. Search transactions by name using the search bar.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +84,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Technologies used
+
+1. Html
+2. CSS
+3. JavaScript
+4. React
+
+# License
+
+# Author's Information
+
+Leon Waga
